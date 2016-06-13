@@ -1,0 +1,929 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0CBB366793FED373A492A7B0 /* Pods_DoorOpener_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0583A79CDBEEDE2A4E31938E /* Pods_DoorOpener_WatchKit_Extension.framework */; };
+		1C62972A545B9B0313BD09BB /* Pods_DoorOpener.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71FC9AF364756D4967679637 /* Pods_DoorOpener.framework */; };
+		A17AA54C1D0F183700A9E432 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17AA54B1D0F183700A9E432 /* AppDelegate.swift */; };
+		A17AA54E1D0F183700A9E432 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17AA54D1D0F183700A9E432 /* ViewController.swift */; };
+		A17AA5511D0F183700A9E432 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A17AA54F1D0F183700A9E432 /* Main.storyboard */; };
+		A17AA5531D0F183700A9E432 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A17AA5521D0F183700A9E432 /* Assets.xcassets */; };
+		A17AA5561D0F183700A9E432 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A17AA5541D0F183700A9E432 /* LaunchScreen.storyboard */; };
+		A17AA55B1D0F183700A9E432 /* DoorOpener WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A17AA55A1D0F183700A9E432 /* DoorOpener WatchKit App.app */; };
+		A17AA5611D0F183700A9E432 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A17AA55F1D0F183700A9E432 /* Interface.storyboard */; };
+		A17AA5631D0F183700A9E432 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A17AA5621D0F183700A9E432 /* Assets.xcassets */; };
+		A17AA56A1D0F183700A9E432 /* DoorOpener WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A17AA5691D0F183700A9E432 /* DoorOpener WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A17AA56F1D0F183700A9E432 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17AA56E1D0F183700A9E432 /* InterfaceController.swift */; };
+		A17AA5711D0F183700A9E432 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17AA5701D0F183700A9E432 /* ExtensionDelegate.swift */; };
+		A17AA5731D0F183700A9E432 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A17AA5721D0F183700A9E432 /* Assets.xcassets */; };
+		A17AA58A1D0F18DC00A9E432 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = A17AA5851D0F18DC00A9E432 /* .gitkeep */; };
+		A17AA58B1D0F18DC00A9E432 /* InteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17AA5861D0F18DC00A9E432 /* InteractorInterface.swift */; };
+		A17AA58C1D0F18DC00A9E432 /* PresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17AA5871D0F18DC00A9E432 /* PresenterInterface.swift */; };
+		A17AA58D1D0F18DC00A9E432 /* ViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17AA5881D0F18DC00A9E432 /* ViewInterface.swift */; };
+		A17AA58E1D0F18DC00A9E432 /* WireframeInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17AA5891D0F18DC00A9E432 /* WireframeInterface.swift */; };
+		A17AA5A91D0F193400A9E432 /* EnteredRoom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A17AA5921D0F193400A9E432 /* EnteredRoom.storyboard */; };
+		A17AA5AA1D0F193400A9E432 /* EnteredRoomInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17AA5931D0F193400A9E432 /* EnteredRoomInteractor.swift */; };
+		A17AA5AB1D0F193400A9E432 /* EnteredRoomInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17AA5941D0F193400A9E432 /* EnteredRoomInterfaces.swift */; };
+		A17AA5AC1D0F193400A9E432 /* EnteredRoomMockInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17AA5951D0F193400A9E432 /* EnteredRoomMockInteractor.swift */; };
+		A17AA5AD1D0F193400A9E432 /* EnteredRoomPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17AA5961D0F193400A9E432 /* EnteredRoomPresenter.swift */; };
+		A17AA5AE1D0F193400A9E432 /* EnteredRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17AA5971D0F193400A9E432 /* EnteredRoomViewController.swift */; };
+		A17AA5AF1D0F193400A9E432 /* EnteredRoomWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17AA5981D0F193400A9E432 /* EnteredRoomWireframe.swift */; };
+		A17AA5B01D0F193400A9E432 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A17AA59A1D0F193400A9E432 /* Login.storyboard */; };
+		A17AA5B11D0F193400A9E432 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17AA59B1D0F193400A9E432 /* LoginInteractor.swift */; };
+		A17AA5B21D0F193400A9E432 /* LoginInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17AA59C1D0F193400A9E432 /* LoginInterfaces.swift */; };
+		A17AA5B31D0F193400A9E432 /* LoginMockInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17AA59D1D0F193400A9E432 /* LoginMockInteractor.swift */; };
+		A17AA5B41D0F193400A9E432 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17AA59E1D0F193400A9E432 /* LoginPresenter.swift */; };
+		A17AA5B51D0F193400A9E432 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17AA59F1D0F193400A9E432 /* LoginViewController.swift */; };
+		A17AA5B61D0F193400A9E432 /* LoginWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17AA5A01D0F193400A9E432 /* LoginWireframe.swift */; };
+		A17AA5B71D0F193400A9E432 /* OpenDoor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A17AA5A21D0F193400A9E432 /* OpenDoor.storyboard */; };
+		A17AA5B81D0F193400A9E432 /* OpenDoorInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17AA5A31D0F193400A9E432 /* OpenDoorInteractor.swift */; };
+		A17AA5B91D0F193400A9E432 /* OpenDoorInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17AA5A41D0F193400A9E432 /* OpenDoorInterfaces.swift */; };
+		A17AA5BA1D0F193400A9E432 /* OpenDoorMockInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17AA5A51D0F193400A9E432 /* OpenDoorMockInteractor.swift */; };
+		A17AA5BB1D0F193400A9E432 /* OpenDoorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17AA5A61D0F193400A9E432 /* OpenDoorPresenter.swift */; };
+		A17AA5BC1D0F193400A9E432 /* OpenDoorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17AA5A71D0F193400A9E432 /* OpenDoorViewController.swift */; };
+		A17AA5BD1D0F193400A9E432 /* OpenDoorWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17AA5A81D0F193400A9E432 /* OpenDoorWireframe.swift */; };
+		A17AA5C01D0F1A1C00A9E432 /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17AA5BF1D0F1A1C00A9E432 /* TokenManager.swift */; };
+		A17AA5C41D0F1A8400A9E432 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = A17AA5C21D0F1A8400A9E432 /* .gitkeep */; };
+		A17AA5C51D0F1A8400A9E432 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17AA5C31D0F1A8400A9E432 /* Constants.swift */; };
+		C7BC65C0536FAE1FF2698EE2 /* Pods_DoorOpener_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C409804D4B4618844D4C36C0 /* Pods_DoorOpener_WatchKit_App.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A17AA55C1D0F183700A9E432 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A17AA5401D0F183700A9E432 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A17AA5591D0F183700A9E432;
+			remoteInfo = "DoorOpener WatchKit App";
+		};
+		A17AA56B1D0F183700A9E432 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A17AA5401D0F183700A9E432 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A17AA5681D0F183700A9E432;
+			remoteInfo = "DoorOpener WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A17AA57A1D0F183700A9E432 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A17AA56A1D0F183700A9E432 /* DoorOpener WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A17AA57E1D0F183700A9E432 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A17AA55B1D0F183700A9E432 /* DoorOpener WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0583A79CDBEEDE2A4E31938E /* Pods_DoorOpener_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoorOpener_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		07F988C65492A6449207BEF0 /* Pods-DoorOpener WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoorOpener WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoorOpener WatchKit Extension/Pods-DoorOpener WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		0DE22BFA6BA29230F209D605 /* Pods-DoorOpener WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoorOpener WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoorOpener WatchKit App/Pods-DoorOpener WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		2305B55A931628B27F9D9177 /* Pods-DoorOpener.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoorOpener.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoorOpener/Pods-DoorOpener.debug.xcconfig"; sourceTree = "<group>"; };
+		2A5E452ED664EBEDC36176D8 /* Pods-DoorOpener.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoorOpener.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoorOpener/Pods-DoorOpener.release.xcconfig"; sourceTree = "<group>"; };
+		71FC9AF364756D4967679637 /* Pods_DoorOpener.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoorOpener.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81D702D26F2059E660401299 /* Pods-DoorOpener WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoorOpener WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoorOpener WatchKit App/Pods-DoorOpener WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		A17AA5481D0F183700A9E432 /* DoorOpener.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoorOpener.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A17AA54B1D0F183700A9E432 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A17AA54D1D0F183700A9E432 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A17AA5501D0F183700A9E432 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A17AA5521D0F183700A9E432 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A17AA5551D0F183700A9E432 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A17AA5571D0F183700A9E432 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A17AA55A1D0F183700A9E432 /* DoorOpener WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DoorOpener WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A17AA5601D0F183700A9E432 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A17AA5621D0F183700A9E432 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A17AA5641D0F183700A9E432 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A17AA5691D0F183700A9E432 /* DoorOpener WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "DoorOpener WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A17AA56E1D0F183700A9E432 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A17AA5701D0F183700A9E432 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		A17AA5721D0F183700A9E432 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A17AA5741D0F183700A9E432 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A17AA5851D0F18DC00A9E432 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		A17AA5861D0F18DC00A9E432 /* InteractorInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractorInterface.swift; sourceTree = "<group>"; };
+		A17AA5871D0F18DC00A9E432 /* PresenterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterInterface.swift; sourceTree = "<group>"; };
+		A17AA5881D0F18DC00A9E432 /* ViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewInterface.swift; sourceTree = "<group>"; };
+		A17AA5891D0F18DC00A9E432 /* WireframeInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WireframeInterface.swift; sourceTree = "<group>"; };
+		A17AA5921D0F193400A9E432 /* EnteredRoom.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EnteredRoom.storyboard; sourceTree = "<group>"; };
+		A17AA5931D0F193400A9E432 /* EnteredRoomInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnteredRoomInteractor.swift; sourceTree = "<group>"; };
+		A17AA5941D0F193400A9E432 /* EnteredRoomInterfaces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnteredRoomInterfaces.swift; sourceTree = "<group>"; };
+		A17AA5951D0F193400A9E432 /* EnteredRoomMockInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnteredRoomMockInteractor.swift; sourceTree = "<group>"; };
+		A17AA5961D0F193400A9E432 /* EnteredRoomPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnteredRoomPresenter.swift; sourceTree = "<group>"; };
+		A17AA5971D0F193400A9E432 /* EnteredRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnteredRoomViewController.swift; sourceTree = "<group>"; };
+		A17AA5981D0F193400A9E432 /* EnteredRoomWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnteredRoomWireframe.swift; sourceTree = "<group>"; };
+		A17AA59A1D0F193400A9E432 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		A17AA59B1D0F193400A9E432 /* LoginInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		A17AA59C1D0F193400A9E432 /* LoginInterfaces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInterfaces.swift; sourceTree = "<group>"; };
+		A17AA59D1D0F193400A9E432 /* LoginMockInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginMockInteractor.swift; sourceTree = "<group>"; };
+		A17AA59E1D0F193400A9E432 /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		A17AA59F1D0F193400A9E432 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A17AA5A01D0F193400A9E432 /* LoginWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginWireframe.swift; sourceTree = "<group>"; };
+		A17AA5A21D0F193400A9E432 /* OpenDoor.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OpenDoor.storyboard; sourceTree = "<group>"; };
+		A17AA5A31D0F193400A9E432 /* OpenDoorInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenDoorInteractor.swift; sourceTree = "<group>"; };
+		A17AA5A41D0F193400A9E432 /* OpenDoorInterfaces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenDoorInterfaces.swift; sourceTree = "<group>"; };
+		A17AA5A51D0F193400A9E432 /* OpenDoorMockInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenDoorMockInteractor.swift; sourceTree = "<group>"; };
+		A17AA5A61D0F193400A9E432 /* OpenDoorPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenDoorPresenter.swift; sourceTree = "<group>"; };
+		A17AA5A71D0F193400A9E432 /* OpenDoorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenDoorViewController.swift; sourceTree = "<group>"; };
+		A17AA5A81D0F193400A9E432 /* OpenDoorWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenDoorWireframe.swift; sourceTree = "<group>"; };
+		A17AA5BF1D0F1A1C00A9E432 /* TokenManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
+		A17AA5C21D0F1A8400A9E432 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		A17AA5C31D0F1A8400A9E432 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A56DC22E14B327019A6CBDB6 /* Pods-DoorOpener WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoorOpener WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoorOpener WatchKit Extension/Pods-DoorOpener WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		C409804D4B4618844D4C36C0 /* Pods_DoorOpener_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoorOpener_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C272AED1EE7D6E20CB5F6AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7BC65C0536FAE1FF2698EE2 /* Pods_DoorOpener_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A17AA5451D0F183700A9E432 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C62972A545B9B0313BD09BB /* Pods_DoorOpener.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A17AA5661D0F183700A9E432 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CBB366793FED373A492A7B0 /* Pods_DoorOpener_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		99EB1D7F301EB11F9E810872 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2305B55A931628B27F9D9177 /* Pods-DoorOpener.debug.xcconfig */,
+				2A5E452ED664EBEDC36176D8 /* Pods-DoorOpener.release.xcconfig */,
+				81D702D26F2059E660401299 /* Pods-DoorOpener WatchKit App.debug.xcconfig */,
+				0DE22BFA6BA29230F209D605 /* Pods-DoorOpener WatchKit App.release.xcconfig */,
+				07F988C65492A6449207BEF0 /* Pods-DoorOpener WatchKit Extension.debug.xcconfig */,
+				A56DC22E14B327019A6CBDB6 /* Pods-DoorOpener WatchKit Extension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A17AA53F1D0F183700A9E432 = {
+			isa = PBXGroup;
+			children = (
+				A17AA54A1D0F183700A9E432 /* DoorOpener */,
+				A17AA55E1D0F183700A9E432 /* DoorOpener WatchKit App */,
+				A17AA56D1D0F183700A9E432 /* DoorOpener WatchKit Extension */,
+				A17AA5491D0F183700A9E432 /* Products */,
+				99EB1D7F301EB11F9E810872 /* Pods */,
+				B6E04254CE8B8C7C58B56A9A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A17AA5491D0F183700A9E432 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A17AA5481D0F183700A9E432 /* DoorOpener.app */,
+				A17AA55A1D0F183700A9E432 /* DoorOpener WatchKit App.app */,
+				A17AA5691D0F183700A9E432 /* DoorOpener WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A17AA54A1D0F183700A9E432 /* DoorOpener */ = {
+			isa = PBXGroup;
+			children = (
+				A17AA5831D0F18DC00A9E432 /* Common */,
+				A17AA5901D0F193400A9E432 /* Modules */,
+				A17AA54B1D0F183700A9E432 /* AppDelegate.swift */,
+				A17AA54D1D0F183700A9E432 /* ViewController.swift */,
+				A17AA54F1D0F183700A9E432 /* Main.storyboard */,
+				A17AA5521D0F183700A9E432 /* Assets.xcassets */,
+				A17AA5541D0F183700A9E432 /* LaunchScreen.storyboard */,
+				A17AA5571D0F183700A9E432 /* Info.plist */,
+			);
+			path = DoorOpener;
+			sourceTree = "<group>";
+		};
+		A17AA55E1D0F183700A9E432 /* DoorOpener WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A17AA55F1D0F183700A9E432 /* Interface.storyboard */,
+				A17AA5621D0F183700A9E432 /* Assets.xcassets */,
+				A17AA5641D0F183700A9E432 /* Info.plist */,
+			);
+			path = "DoorOpener WatchKit App";
+			sourceTree = "<group>";
+		};
+		A17AA56D1D0F183700A9E432 /* DoorOpener WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A17AA56E1D0F183700A9E432 /* InterfaceController.swift */,
+				A17AA5701D0F183700A9E432 /* ExtensionDelegate.swift */,
+				A17AA5721D0F183700A9E432 /* Assets.xcassets */,
+				A17AA5741D0F183700A9E432 /* Info.plist */,
+			);
+			path = "DoorOpener WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		A17AA5831D0F18DC00A9E432 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A17AA5BE1D0F1A1C00A9E432 /* Token Manager */,
+				A17AA5C11D0F1A8400A9E432 /* Constants */,
+				A17AA5841D0F18DC00A9E432 /* VIPER */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A17AA5841D0F18DC00A9E432 /* VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				A17AA5851D0F18DC00A9E432 /* .gitkeep */,
+				A17AA5861D0F18DC00A9E432 /* InteractorInterface.swift */,
+				A17AA5871D0F18DC00A9E432 /* PresenterInterface.swift */,
+				A17AA5881D0F18DC00A9E432 /* ViewInterface.swift */,
+				A17AA5891D0F18DC00A9E432 /* WireframeInterface.swift */,
+			);
+			path = VIPER;
+			sourceTree = "<group>";
+		};
+		A17AA5901D0F193400A9E432 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				A17AA5911D0F193400A9E432 /* Entered Room */,
+				A17AA5991D0F193400A9E432 /* Login */,
+				A17AA5A11D0F193400A9E432 /* Open Door */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		A17AA5911D0F193400A9E432 /* Entered Room */ = {
+			isa = PBXGroup;
+			children = (
+				A17AA5921D0F193400A9E432 /* EnteredRoom.storyboard */,
+				A17AA5931D0F193400A9E432 /* EnteredRoomInteractor.swift */,
+				A17AA5941D0F193400A9E432 /* EnteredRoomInterfaces.swift */,
+				A17AA5951D0F193400A9E432 /* EnteredRoomMockInteractor.swift */,
+				A17AA5961D0F193400A9E432 /* EnteredRoomPresenter.swift */,
+				A17AA5971D0F193400A9E432 /* EnteredRoomViewController.swift */,
+				A17AA5981D0F193400A9E432 /* EnteredRoomWireframe.swift */,
+			);
+			path = "Entered Room";
+			sourceTree = "<group>";
+		};
+		A17AA5991D0F193400A9E432 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A17AA59A1D0F193400A9E432 /* Login.storyboard */,
+				A17AA59B1D0F193400A9E432 /* LoginInteractor.swift */,
+				A17AA59C1D0F193400A9E432 /* LoginInterfaces.swift */,
+				A17AA59D1D0F193400A9E432 /* LoginMockInteractor.swift */,
+				A17AA59E1D0F193400A9E432 /* LoginPresenter.swift */,
+				A17AA59F1D0F193400A9E432 /* LoginViewController.swift */,
+				A17AA5A01D0F193400A9E432 /* LoginWireframe.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		A17AA5A11D0F193400A9E432 /* Open Door */ = {
+			isa = PBXGroup;
+			children = (
+				A17AA5A21D0F193400A9E432 /* OpenDoor.storyboard */,
+				A17AA5A31D0F193400A9E432 /* OpenDoorInteractor.swift */,
+				A17AA5A41D0F193400A9E432 /* OpenDoorInterfaces.swift */,
+				A17AA5A51D0F193400A9E432 /* OpenDoorMockInteractor.swift */,
+				A17AA5A61D0F193400A9E432 /* OpenDoorPresenter.swift */,
+				A17AA5A71D0F193400A9E432 /* OpenDoorViewController.swift */,
+				A17AA5A81D0F193400A9E432 /* OpenDoorWireframe.swift */,
+			);
+			path = "Open Door";
+			sourceTree = "<group>";
+		};
+		A17AA5BE1D0F1A1C00A9E432 /* Token Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A17AA5BF1D0F1A1C00A9E432 /* TokenManager.swift */,
+			);
+			name = "Token Manager";
+			path = "../Modules/Token Manager";
+			sourceTree = "<group>";
+		};
+		A17AA5C11D0F1A8400A9E432 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				A17AA5C21D0F1A8400A9E432 /* .gitkeep */,
+				A17AA5C31D0F1A8400A9E432 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		B6E04254CE8B8C7C58B56A9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71FC9AF364756D4967679637 /* Pods_DoorOpener.framework */,
+				C409804D4B4618844D4C36C0 /* Pods_DoorOpener_WatchKit_App.framework */,
+				0583A79CDBEEDE2A4E31938E /* Pods_DoorOpener_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A17AA5471D0F183700A9E432 /* DoorOpener */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A17AA57F1D0F183700A9E432 /* Build configuration list for PBXNativeTarget "DoorOpener" */;
+			buildPhases = (
+				2E5CDD24AB380D042F758AD1 /* 📦 Check Pods Manifest.lock */,
+				A17AA5441D0F183700A9E432 /* Sources */,
+				A17AA5451D0F183700A9E432 /* Frameworks */,
+				A17AA5461D0F183700A9E432 /* Resources */,
+				A17AA57E1D0F183700A9E432 /* Embed Watch Content */,
+				82A88B7EB186D7CF462BFD1A /* 📦 Embed Pods Frameworks */,
+				AD10DB75A7E392AFE789C2B2 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A17AA55D1D0F183700A9E432 /* PBXTargetDependency */,
+			);
+			name = DoorOpener;
+			productName = DoorOpener;
+			productReference = A17AA5481D0F183700A9E432 /* DoorOpener.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A17AA5591D0F183700A9E432 /* DoorOpener WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A17AA57B1D0F183700A9E432 /* Build configuration list for PBXNativeTarget "DoorOpener WatchKit App" */;
+			buildPhases = (
+				BB931584E363A3E43D758606 /* 📦 Check Pods Manifest.lock */,
+				A17AA5581D0F183700A9E432 /* Resources */,
+				A17AA57A1D0F183700A9E432 /* Embed App Extensions */,
+				3C272AED1EE7D6E20CB5F6AF /* Frameworks */,
+				D3F8BCEFBC2A4BAA15CAF005 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A17AA56C1D0F183700A9E432 /* PBXTargetDependency */,
+			);
+			name = "DoorOpener WatchKit App";
+			productName = "DoorOpener WatchKit App";
+			productReference = A17AA55A1D0F183700A9E432 /* DoorOpener WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A17AA5681D0F183700A9E432 /* DoorOpener WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A17AA5771D0F183700A9E432 /* Build configuration list for PBXNativeTarget "DoorOpener WatchKit Extension" */;
+			buildPhases = (
+				ACE03153EC70BC99DCF1FC4B /* 📦 Check Pods Manifest.lock */,
+				A17AA5651D0F183700A9E432 /* Sources */,
+				A17AA5661D0F183700A9E432 /* Frameworks */,
+				A17AA5671D0F183700A9E432 /* Resources */,
+				60A94BDB9A8C4E4266540E73 /* 📦 Embed Pods Frameworks */,
+				EFE3FDA8A80976527CA60C73 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DoorOpener WatchKit Extension";
+			productName = "DoorOpener WatchKit Extension";
+			productReference = A17AA5691D0F183700A9E432 /* DoorOpener WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A17AA5401D0F183700A9E432 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = "";
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = FER;
+				TargetAttributes = {
+					A17AA5471D0F183700A9E432 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 5F5M64F878;
+					};
+					A17AA5591D0F183700A9E432 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 5F5M64F878;
+					};
+					A17AA5681D0F183700A9E432 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 5F5M64F878;
+					};
+				};
+			};
+			buildConfigurationList = A17AA5431D0F183700A9E432 /* Build configuration list for PBXProject "DoorOpener" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A17AA53F1D0F183700A9E432;
+			productRefGroup = A17AA5491D0F183700A9E432 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A17AA5471D0F183700A9E432 /* DoorOpener */,
+				A17AA5591D0F183700A9E432 /* DoorOpener WatchKit App */,
+				A17AA5681D0F183700A9E432 /* DoorOpener WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A17AA5461D0F183700A9E432 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A17AA5561D0F183700A9E432 /* LaunchScreen.storyboard in Resources */,
+				A17AA5A91D0F193400A9E432 /* EnteredRoom.storyboard in Resources */,
+				A17AA5B01D0F193400A9E432 /* Login.storyboard in Resources */,
+				A17AA5B71D0F193400A9E432 /* OpenDoor.storyboard in Resources */,
+				A17AA5531D0F183700A9E432 /* Assets.xcassets in Resources */,
+				A17AA5511D0F183700A9E432 /* Main.storyboard in Resources */,
+				A17AA58A1D0F18DC00A9E432 /* .gitkeep in Resources */,
+				A17AA5C41D0F1A8400A9E432 /* .gitkeep in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A17AA5581D0F183700A9E432 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A17AA5631D0F183700A9E432 /* Assets.xcassets in Resources */,
+				A17AA5611D0F183700A9E432 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A17AA5671D0F183700A9E432 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A17AA5731D0F183700A9E432 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E5CDD24AB380D042F758AD1 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		60A94BDB9A8C4E4266540E73 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DoorOpener WatchKit Extension/Pods-DoorOpener WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82A88B7EB186D7CF462BFD1A /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DoorOpener/Pods-DoorOpener-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACE03153EC70BC99DCF1FC4B /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AD10DB75A7E392AFE789C2B2 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DoorOpener/Pods-DoorOpener-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB931584E363A3E43D758606 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D3F8BCEFBC2A4BAA15CAF005 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DoorOpener WatchKit App/Pods-DoorOpener WatchKit App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFE3FDA8A80976527CA60C73 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DoorOpener WatchKit Extension/Pods-DoorOpener WatchKit Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A17AA5441D0F183700A9E432 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A17AA5B41D0F193400A9E432 /* LoginPresenter.swift in Sources */,
+				A17AA58E1D0F18DC00A9E432 /* WireframeInterface.swift in Sources */,
+				A17AA5BD1D0F193400A9E432 /* OpenDoorWireframe.swift in Sources */,
+				A17AA58D1D0F18DC00A9E432 /* ViewInterface.swift in Sources */,
+				A17AA5AA1D0F193400A9E432 /* EnteredRoomInteractor.swift in Sources */,
+				A17AA5B81D0F193400A9E432 /* OpenDoorInteractor.swift in Sources */,
+				A17AA58C1D0F18DC00A9E432 /* PresenterInterface.swift in Sources */,
+				A17AA5C51D0F1A8400A9E432 /* Constants.swift in Sources */,
+				A17AA5BB1D0F193400A9E432 /* OpenDoorPresenter.swift in Sources */,
+				A17AA58B1D0F18DC00A9E432 /* InteractorInterface.swift in Sources */,
+				A17AA5AC1D0F193400A9E432 /* EnteredRoomMockInteractor.swift in Sources */,
+				A17AA5B31D0F193400A9E432 /* LoginMockInteractor.swift in Sources */,
+				A17AA54E1D0F183700A9E432 /* ViewController.swift in Sources */,
+				A17AA5B21D0F193400A9E432 /* LoginInterfaces.swift in Sources */,
+				A17AA5BC1D0F193400A9E432 /* OpenDoorViewController.swift in Sources */,
+				A17AA5AF1D0F193400A9E432 /* EnteredRoomWireframe.swift in Sources */,
+				A17AA5AD1D0F193400A9E432 /* EnteredRoomPresenter.swift in Sources */,
+				A17AA5B91D0F193400A9E432 /* OpenDoorInterfaces.swift in Sources */,
+				A17AA5AB1D0F193400A9E432 /* EnteredRoomInterfaces.swift in Sources */,
+				A17AA5BA1D0F193400A9E432 /* OpenDoorMockInteractor.swift in Sources */,
+				A17AA5B51D0F193400A9E432 /* LoginViewController.swift in Sources */,
+				A17AA5B61D0F193400A9E432 /* LoginWireframe.swift in Sources */,
+				A17AA5B11D0F193400A9E432 /* LoginInteractor.swift in Sources */,
+				A17AA5C01D0F1A1C00A9E432 /* TokenManager.swift in Sources */,
+				A17AA5AE1D0F193400A9E432 /* EnteredRoomViewController.swift in Sources */,
+				A17AA54C1D0F183700A9E432 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A17AA5651D0F183700A9E432 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A17AA5711D0F183700A9E432 /* ExtensionDelegate.swift in Sources */,
+				A17AA56F1D0F183700A9E432 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A17AA55D1D0F183700A9E432 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A17AA5591D0F183700A9E432 /* DoorOpener WatchKit App */;
+			targetProxy = A17AA55C1D0F183700A9E432 /* PBXContainerItemProxy */;
+		};
+		A17AA56C1D0F183700A9E432 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A17AA5681D0F183700A9E432 /* DoorOpener WatchKit Extension */;
+			targetProxy = A17AA56B1D0F183700A9E432 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A17AA54F1D0F183700A9E432 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A17AA5501D0F183700A9E432 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A17AA5541D0F183700A9E432 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A17AA5551D0F183700A9E432 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A17AA55F1D0F183700A9E432 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A17AA5601D0F183700A9E432 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A17AA5751D0F183700A9E432 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A17AA5761D0F183700A9E432 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A17AA5781D0F183700A9E432 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07F988C65492A6449207BEF0 /* Pods-DoorOpener WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "DoorOpener WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DoorOpener.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		A17AA5791D0F183700A9E432 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A56DC22E14B327019A6CBDB6 /* Pods-DoorOpener WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "DoorOpener WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DoorOpener.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		A17AA57C1D0F183700A9E432 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81D702D26F2059E660401299 /* Pods-DoorOpener WatchKit App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = DoorOpener_WatchKit_Extension;
+				INFOPLIST_FILE = "DoorOpener WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DoorOpener.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		A17AA57D1D0F183700A9E432 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DE22BFA6BA29230F209D605 /* Pods-DoorOpener WatchKit App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = DoorOpener_WatchKit_Extension;
+				INFOPLIST_FILE = "DoorOpener WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DoorOpener.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		A17AA5801D0F183700A9E432 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2305B55A931628B27F9D9177 /* Pods-DoorOpener.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = DoorOpener/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DoorOpener;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A17AA5811D0F183700A9E432 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A5E452ED664EBEDC36176D8 /* Pods-DoorOpener.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = DoorOpener/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DoorOpener;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A17AA5431D0F183700A9E432 /* Build configuration list for PBXProject "DoorOpener" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A17AA5751D0F183700A9E432 /* Debug */,
+				A17AA5761D0F183700A9E432 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A17AA5771D0F183700A9E432 /* Build configuration list for PBXNativeTarget "DoorOpener WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A17AA5781D0F183700A9E432 /* Debug */,
+				A17AA5791D0F183700A9E432 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A17AA57B1D0F183700A9E432 /* Build configuration list for PBXNativeTarget "DoorOpener WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A17AA57C1D0F183700A9E432 /* Debug */,
+				A17AA57D1D0F183700A9E432 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A17AA57F1D0F183700A9E432 /* Build configuration list for PBXNativeTarget "DoorOpener" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A17AA5801D0F183700A9E432 /* Debug */,
+				A17AA5811D0F183700A9E432 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A17AA5401D0F183700A9E432 /* Project object */;
+}
