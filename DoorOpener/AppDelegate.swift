@@ -11,7 +11,7 @@ import WatchConnectivity
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    private var roomStatusInteractor = RoomStatusInteractor()
     var window: UIWindow?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
@@ -51,8 +51,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 extension AppDelegate: WCSessionDelegate {
     func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
-        replyHandler([:])
-        print("heea")
+        let messageKey = "UserCurrentRoom"
+        guard TokenManager.userHasToken else {
+            replyHandler([messageKey: "NoToken"])
+            return
+        }
+
+        let token = TokenManager.token
+
+        roomStatusInteractor.getRoomStatusForUserWithToken(token, success: { roomID in [replyHandler]
+            if roomID == nil {
+                replyHandler([messageKey : "OutOfRoom"])
+            } else {
+                replyHandler([messageKey : "InRoom"])
+            }
+        }) { (error) in
+            replyHandler([messageKey : error])
+        }
     }
 }
 

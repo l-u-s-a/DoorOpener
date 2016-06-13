@@ -10,15 +10,18 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="DoorOpener_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <button width="1" height="1" alignment="center" verticalAlignment="center" title="OPEN DOOR" id="zI3-Cn-SSY">
+                        <button alignment="center" verticalAlignment="center" alpha="0.0" enabled="NO" id="zI3-Cn-SSY">
                             <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="font" type="system" weight="light" pointSize="20"/>
                             <connections>
-                                <action selector="openDoorButtonTouched" destination="AgC-eL-Hgc" id="eKn-nc-ZrK"/>
+                                <action selector="buttonTouched" destination="AgC-eL-Hgc" id="EyS-7c-Wis"/>
                             </connections>
                         </button>
                     </items>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="button" destination="zI3-Cn-SSY" id="vZp-RF-kW9"/>
+                    </connections>
                 </controller>
             </objects>
         </scene>

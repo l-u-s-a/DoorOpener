@@ -12,7 +12,7 @@ import Foundation
 
 // MARK: - Endpoints -
 
-//let baseURL = "http://iotat.tel.fer.hr:59980"
-let baseURL = "http://localhost:8080"
+let baseURL = "http://iotat.tel.fer.hr:59980"
+//let baseURL = "http://localhost:8080"
 let kUserDefaultsTokenKey = "kUserDefaultsTokenKey"
 let roomID = "C8-18"

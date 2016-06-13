@@ -50,6 +50,7 @@
 		A17AA5C01D0F1A1C00A9E432 /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17AA5BF1D0F1A1C00A9E432 /* TokenManager.swift */; };
 		A17AA5C41D0F1A8400A9E432 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = A17AA5C21D0F1A8400A9E432 /* .gitkeep */; };
 		A17AA5C51D0F1A8400A9E432 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17AA5C31D0F1A8400A9E432 /* Constants.swift */; };
+		A17AA5C81D0F3B3400A9E432 /* RoomStatusInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17AA5C71D0F3B3400A9E432 /* RoomStatusInteractor.swift */; };
 		C7BC65C0536FAE1FF2698EE2 /* Pods_DoorOpener_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C409804D4B4618844D4C36C0 /* Pods_DoorOpener_WatchKit_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -148,6 +149,7 @@
 		A17AA5BF1D0F1A1C00A9E432 /* TokenManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
 		A17AA5C21D0F1A8400A9E432 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		A17AA5C31D0F1A8400A9E432 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A17AA5C71D0F3B3400A9E432 /* RoomStatusInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomStatusInteractor.swift; sourceTree = "<group>"; };
 		A56DC22E14B327019A6CBDB6 /* Pods-DoorOpener WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoorOpener WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoorOpener WatchKit Extension/Pods-DoorOpener WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
 		C409804D4B4618844D4C36C0 /* Pods_DoorOpener_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoorOpener_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -254,6 +256,7 @@
 		A17AA5831D0F18DC00A9E432 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				A17AA5C61D0F3B2500A9E432 /* Room Status Interactor */,
 				A17AA5BE1D0F1A1C00A9E432 /* Token Manager */,
 				A17AA5C11D0F1A8400A9E432 /* Constants */,
 				A17AA5841D0F18DC00A9E432 /* VIPER */,
@@ -341,6 +344,14 @@
 				A17AA5C31D0F1A8400A9E432 /* Constants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		A17AA5C61D0F3B2500A9E432 /* Room Status Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A17AA5C71D0F3B3400A9E432 /* RoomStatusInteractor.swift */,
+			);
+			path = "Room Status Interactor";
 			sourceTree = "<group>";
 		};
 		B6E04254CE8B8C7C58B56A9A /* Frameworks */ = {
@@ -648,6 +659,7 @@
 				A17AA5BA1D0F193400A9E432 /* OpenDoorMockInteractor.swift in Sources */,
 				A17AA5B51D0F193400A9E432 /* LoginViewController.swift in Sources */,
 				A17AA5B61D0F193400A9E432 /* LoginWireframe.swift in Sources */,
+				A17AA5C81D0F3B3400A9E432 /* RoomStatusInteractor.swift in Sources */,
 				A17AA5B11D0F193400A9E432 /* LoginInteractor.swift in Sources */,
 				A17AA5C01D0F1A1C00A9E432 /* TokenManager.swift in Sources */,
 				A17AA5AE1D0F193400A9E432 /* EnteredRoomViewController.swift in Sources */,
