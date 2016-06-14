@@ -226,7 +226,6 @@
 				A17AA54D1D0F183700A9E432 /* ViewController.swift */,
 				A17AA54F1D0F183700A9E432 /* Main.storyboard */,
 				A17AA5521D0F183700A9E432 /* Assets.xcassets */,
-				A17AA5541D0F183700A9E432 /* LaunchScreen.storyboard */,
 				A17AA5571D0F183700A9E432 /* Info.plist */,
 			);
 			path = DoorOpener;
@@ -305,6 +304,7 @@
 			children = (
 				A17AA59A1D0F193400A9E432 /* Login.storyboard */,
 				A17AA59B1D0F193400A9E432 /* LoginInteractor.swift */,
+				A17AA5541D0F183700A9E432 /* LaunchScreen.storyboard */,
 				A17AA59C1D0F193400A9E432 /* LoginInterfaces.swift */,
 				A17AA59D1D0F193400A9E432 /* LoginMockInteractor.swift */,
 				A17AA59E1D0F193400A9E432 /* LoginPresenter.swift */,
@@ -706,6 +706,7 @@
 				A17AA5551D0F183700A9E432 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		A17AA55F1D0F183700A9E432 /* Interface.storyboard */ = {

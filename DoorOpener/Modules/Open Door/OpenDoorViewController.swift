@@ -36,14 +36,6 @@ final class OpenDoorViewController: UIViewController {
 // MARK: - Extensions -
 
 extension OpenDoorViewController: OpenDoorViewInterface {
-    func showSpinner() {
-
-    }
-    
-    func hideSpinner() {
-
-    }
-
     func showErrorMessage(errorMessage: String) {
     }
     

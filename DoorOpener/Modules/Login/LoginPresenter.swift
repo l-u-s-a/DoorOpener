@@ -39,14 +39,14 @@ extension LoginPresenter: LoginViewDelegateInterface {
             return
         }
         
-        _view.showSpinner()
+        _view.showLoading()
         
         _interactor.requestTokenForUserWith(username, password: password, success: { [weak self] (token) in
-            self?._view.hideSpinner()
+            self?._view.hideLoading()
             TokenManager.token = token
-            self?._wireframe.performNavigationAction(LoginNavigationAction.GoToDoorOpening)
+            self?._wireframe.performNavigationAction(.GoToDoorOpening)
             }) { [weak self] (error) in
-                self?._view.hideSpinner()
+                self?._view.hideLoading()
                 self?._view.showErrorMessage(error)
         }
     }

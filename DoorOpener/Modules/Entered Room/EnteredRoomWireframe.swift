@@ -21,6 +21,7 @@ final class EnteredRoomWireframe: NSObject {
     private let _storyboard: UIStoryboard = UIStoryboard(name: "EnteredRoom", bundle: nil)
     
     // MARK: - Public properties -
+    weak var tabBarController: UITabBarController?
     weak var navigationController: UINavigationController?
     weak var viewController: UIViewController?
     
@@ -52,8 +53,15 @@ final class EnteredRoomWireframe: NSObject {
 extension EnteredRoomWireframe: EnteredRoomWireframeInterface {
     func performNavigationAction(action: EnteredRoomNavigationAction) {
         switch action {
-        case .GoBack:
-            navigationController?.popViewControllerAnimated(true)
+        case .GoToOpenDoorScreen:
+            let openDoorWireframe = OpenDoorWireframe()
+            openDoorWireframe.tabBarController = tabBarController
+            openDoorWireframe.setViewInTabBarController()
+
+        case .GoToLoginScreen:
+            let loginWireframe = LoginWireframe()
+            loginWireframe.tabBarController = tabBarController
+            loginWireframe.setViewInTabBarController()
         }
     }
 }

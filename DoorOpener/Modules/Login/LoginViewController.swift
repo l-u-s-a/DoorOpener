@@ -35,9 +35,7 @@ extension LoginViewController: LoginViewInterface {
         passwordTextField.text = ""
         usernameTextField.becomeFirstResponder()
     }
-
-    func showSpinner() {}
-    func hideSpinner() {}
+    
     func showErrorMessage(errorMessage: String) {}
     func showErrorMessage(errorMessage: String, completionHandler: (() -> ())) {}
 }

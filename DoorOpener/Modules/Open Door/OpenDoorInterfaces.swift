@@ -14,6 +14,7 @@ import UIKit
 // MARK: - Navigation -
 enum  OpenDoorNavigationAction {
     case EnterRoom
+    case GoToLoginScreen
 }
 
 // MARK: - OpenDoor Wireframe Interface -

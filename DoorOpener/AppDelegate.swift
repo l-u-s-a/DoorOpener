@@ -29,12 +29,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let rootViewController = wireframe.instantiateAndConfigureModule()
 
-        let navigationController = UINavigationController(rootViewController: rootViewController)
-        navigationController.navigationBarHidden = true
+        let tabBarController = UITabBarController()
+        tabBarController.view.backgroundColor = UIColor.whiteColor()
+        tabBarController.tabBar.hidden = true
+        tabBarController.setViewControllers([rootViewController], animated: true)
 
-        window?.rootViewController = navigationController
+        window?.rootViewController = tabBarController
 
-        wireframe.navigationController = navigationController
+        wireframe.tabBarController = tabBarController
 
         window?.makeKeyAndVisible()
     }

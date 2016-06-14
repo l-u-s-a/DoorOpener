@@ -33,11 +33,11 @@ extension EnteredRoomPresenter: EnteredRoomViewDelegateInterface {
     }
     
     func didTouchLeaveRoom() {
-        _view.showSpinner()
+        _view.showLoading()
         
         _interactor.leaveRoomWithID(roomID, token: TokenManager.token, success: { [weak self] in
-            self?._view.hideSpinner()
-            self?._wireframe.performNavigationAction(EnteredRoomNavigationAction.GoBack)
+            self?._view.hideLoading()
+            self?._wireframe.performNavigationAction(.GoToOpenDoorScreen)
             }) { [weak self] (error) in
                 self?._view.showErrorMessage(error)
         }

@@ -13,7 +13,8 @@ import UIKit
 
 // MARK: - Navigation -
 enum  EnteredRoomNavigationAction {
-    case GoBack
+    case GoToOpenDoorScreen
+    case GoToLoginScreen
 }
 
 // MARK: - EnteredRoom Wireframe Interface -

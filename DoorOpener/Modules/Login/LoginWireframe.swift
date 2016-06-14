@@ -21,6 +21,7 @@ final class LoginWireframe: NSObject {
     private let _storyboard: UIStoryboard = UIStoryboard(name: "Login", bundle: nil)
     
     // MARK: - Public properties -
+    weak var tabBarController: UITabBarController?
     weak var navigationController: UINavigationController?
     weak var viewController: UIViewController?
     
@@ -50,11 +51,17 @@ final class LoginWireframe: NSObject {
 
 // MARK: - Login Wireframe Interface Requirements -
 extension LoginWireframe: LoginWireframeInterface {
-    
     func performNavigationAction(action: LoginNavigationAction) {
         switch action {
         case .GoToDoorOpening:
-            OpenDoorWireframe(context: nil, navigationController: navigationController).pushViewOnNavigationController(animated: true)
+            let openDoorWireframe = OpenDoorWireframe()
+            openDoorWireframe.tabBarController = tabBarController
+            openDoorWireframe.setViewInTabBarController()
+
+        case .GoToEnteredRoom:
+            let enteredRoomWireframe = EnteredRoomWireframe()
+            enteredRoomWireframe.tabBarController = tabBarController
+            enteredRoomWireframe.setViewInTabBarController()
         }
     }
 }

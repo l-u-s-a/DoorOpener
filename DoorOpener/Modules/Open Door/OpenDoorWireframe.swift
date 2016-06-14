@@ -21,6 +21,7 @@ final class OpenDoorWireframe: NSObject {
     private let _storyboard: UIStoryboard = UIStoryboard(name: "OpenDoor", bundle: nil)
     
     // MARK: - Public properties -
+    weak var tabBarController: UITabBarController?
     weak var navigationController: UINavigationController?
     weak var viewController: UIViewController?
     
@@ -54,8 +55,14 @@ extension OpenDoorWireframe: OpenDoorWireframeInterface {
     func performNavigationAction(action: OpenDoorNavigationAction) {
         switch action {
         case .EnterRoom:
-            let enteredRoomWireframe = EnteredRoomWireframe(context: nil, navigationController: navigationController)
-            enteredRoomWireframe.pushViewOnNavigationController(animated: true)
+            let enteredRoomWireframe = EnteredRoomWireframe()
+            enteredRoomWireframe.tabBarController = tabBarController
+            enteredRoomWireframe.setViewInTabBarController()
+
+        case .GoToLoginScreen:
+            let loginWireframe = LoginWireframe()
+            loginWireframe.tabBarController = tabBarController
+            loginWireframe.setViewInTabBarController()
         }
     }
 }

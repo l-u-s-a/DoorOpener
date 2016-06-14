@@ -11,7 +11,7 @@ import UIKit
 
 // MARK: - Wireframe interface -
 protocol WireframeInterface {
-    
+    weak var tabBarController: UITabBarController? { get set }
     weak var navigationController: UINavigationController? { get set }
     weak var viewController: UIViewController? { get set }
 
@@ -23,6 +23,15 @@ extension WireframeInterface {
 
     func pushViewOnNavigationController(animated animated: Bool) {
         navigationController?.pushViewController(instantiateAndConfigureModule(), animated: animated)
+    }
+
+    func setViewInTabBarController() {
+        let viewController = instantiateAndConfigureModule()
+        viewController.view.alpha = 0
+        tabBarController?.setViewControllers([viewController], animated: false)
+        UIView.animateWithDuration(0.3) { 
+            viewController.view.alpha = 1
+        }
     }
     
     func popViewController(animated animated: Bool) {

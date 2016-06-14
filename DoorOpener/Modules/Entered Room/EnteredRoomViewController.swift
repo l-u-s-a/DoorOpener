@@ -35,14 +35,6 @@ final class EnteredRoomViewController: UIViewController {
 // MARK: - Extensions -
 
 extension EnteredRoomViewController: EnteredRoomViewInterface {
-    func showSpinner() {
-
-    }
-
-    func hideSpinner() {
-
-    }
-
     func showErrorMessage(errorMessage: String) {
 
     }

@@ -14,6 +14,7 @@ import UIKit
 // MARK: - Navigation -
 enum  LoginNavigationAction {
     case GoToDoorOpening
+    case GoToEnteredRoom
 }
 
 // MARK: - Login Wireframe Interface -

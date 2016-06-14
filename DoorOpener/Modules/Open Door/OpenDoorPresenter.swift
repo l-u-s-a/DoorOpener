@@ -29,10 +29,10 @@ final class OpenDoorPresenter: NSObject {
 extension OpenDoorPresenter: OpenDoorViewDelegateInterface {
     func didTouchEnterRoomButton() {
         
-        self._view?.showSpinner()
+        self._view?.showLoading()
         
         _interactor.openRoomWithID(roomID, token: TokenManager.token, success: { [weak self] in
-            self?._view?.hideSpinner()
+            self?._view?.hideLoading()
             self?._wireframe.performNavigationAction(OpenDoorNavigationAction.EnterRoom)
             }) { (error) in
                 print(error)
