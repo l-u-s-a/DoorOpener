@@ -12,6 +12,7 @@ import WatchConnectivity
 
 class InterfaceController: WKInterfaceController {
     @IBOutlet var button: WKInterfaceButton!
+    @IBOutlet var label: WKInterfaceLabel!
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -28,8 +29,10 @@ class InterfaceController: WKInterfaceController {
         let image = UIImage(named: "entranceButton")
         button.setBackgroundImage(image)
         button.setEnabled(true)
+        label.setText("Uđi u prostoriju")
         animateWithDuration(0.3) { 
             self.button.setAlpha(1)
+            self.label.setAlpha(1)
         }
         print("out of room state")
     }
@@ -38,22 +41,34 @@ class InterfaceController: WKInterfaceController {
         let image = UIImage(named: "leaveButton")
         button.setBackgroundImage(image)
         button.setEnabled(true)
+        label.setText("Napusti prostoriju")
         animateWithDuration(0.3) {
             self.button.setAlpha(1)
+            self.label.setAlpha(1)
         }
         print("in room state")
+    }
+
+    private func updateUIForErrorMessage(errorMessage: String) {
+        label.setText(errorMessage)
+        animateWithDuration(0.3) { 
+            self.label.setAlpha(1)
+        }
     }
 
     private func _clearUI() {
         button.setEnabled(false)
         button.setBackgroundImage(nil)
         button.setAlpha(0)
+        label.setText(nil)
+        label.setAlpha(0)
     }
 
     private func _clearUIAnimated() {
         button.setEnabled(false)
         animateWithDuration(0.3) {
             self.button.setAlpha(0)
+            self.label.setAlpha(0)
         }
     }
 
@@ -77,7 +92,7 @@ class InterfaceController: WKInterfaceController {
                 break
             }
             }, errorHandler: { error in
-                print(error.localizedDescription)
+                self.updateUIForErrorMessage(error.localizedDescription)
         })
     }
 

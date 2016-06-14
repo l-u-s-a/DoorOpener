@@ -17,10 +17,14 @@
                                 <action selector="buttonTouched" destination="AgC-eL-Hgc" id="EyS-7c-Wis"/>
                             </connections>
                         </button>
+                        <label height="0.29999999999999999" alignment="center" verticalAlignment="bottom" text="Uđi u prostoriju" numberOfLines="0" id="7pa-v0-5YM">
+                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
                     </items>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
                         <outlet property="button" destination="zI3-Cn-SSY" id="vZp-RF-kW9"/>
+                        <outlet property="label" destination="7pa-v0-5YM" id="bAG-pz-WJS"/>
                     </connections>
                 </controller>
             </objects>
